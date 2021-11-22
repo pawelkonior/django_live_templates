@@ -1,8 +1,8 @@
 <ul>
-    {% for $item$ in $items$ %}
+    {% if $item$ %}
         <li>{{ $item$ }}</li>
 
-    {% empty %}
+    {% else %}
         $no_items$
 
     {% endfor %}
